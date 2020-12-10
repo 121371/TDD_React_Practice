@@ -1,0 +1,16 @@
+ //login
+ return (
+    <div>
+      <input type="text" name="username" onChange={() => {}} />
+      <input type="password" name="password" onChange={() => {}} />
+    </div>
+  );
+
+//app.js
+   return (
+    <div className="App">
+      <header className="App-header">This is a login page</header>
+      <Login />
+    </div>
+  );
+
