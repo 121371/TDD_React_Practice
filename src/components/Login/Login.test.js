@@ -16,4 +16,8 @@ describe("Form component", () => {
   it("should render an username input tag", () => {
     expect(wrapper.find('input[name="username"]').exists()).toBe(true);
   });
+
+  it("should render an password input tag", () => {
+    expect(wrapper.find('input[name="password"]').exists()).toBe(true);
+  });
 });
