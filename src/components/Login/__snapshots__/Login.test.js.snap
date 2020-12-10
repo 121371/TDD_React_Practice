@@ -7,15 +7,18 @@ Array [
       name="username"
       onChange={[Function]}
       type="text"
+      value=""
     />
     <input
       name="password"
       onChange={[Function]}
       type="password"
+      value=""
     />
     <button
       name="login-button"
       onClick={[Function]}
+      type="submit"
     >
       Login
     </button>
