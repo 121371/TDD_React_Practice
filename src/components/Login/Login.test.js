@@ -17,7 +17,21 @@ describe("Form component", () => {
     expect(wrapper.find('input[name="username"]').exists()).toBe(true);
   });
 
-  it("should render an password input tag", () => {
+  it("username must have the default valaue", () => {
+    expect(wrapper.find('input[name="username"]').props().value).toBe('');
+  });
+
+  it("should render a password input tag", () => {
     expect(wrapper.find('input[name="password"]').exists()).toBe(true);
   });
+
+  it("password must have the default valaue", () => {
+    expect(wrapper.find('input[name="password"]').props().value).toBe('');
+  });
+
+  it("should render a submit button", () => {
+    expect(wrapper.find('button[name="login-button"]').exists()).toBe(true);
+  });
+
+  
 });

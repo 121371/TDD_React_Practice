@@ -13,6 +13,12 @@ Array [
       onChange={[Function]}
       type="password"
     />
+    <button
+      name="login-button"
+      onClick={[Function]}
+    >
+      Login
+    </button>
   </div>,
 ]
 `;
