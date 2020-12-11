@@ -30,7 +30,7 @@ describe("Form component", () => {
     expect(wrapper.find('input[name="password"]').exists()).toBe(true);
   });
 
-  it("password must have the default valaue", () => {
+  it("password must have the default value", () => {
     expect(wrapper.find('input[name="password"]').props().value).toBe('');
   });
 
