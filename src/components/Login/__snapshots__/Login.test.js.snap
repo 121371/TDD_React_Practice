@@ -16,6 +16,7 @@ Array [
       value=""
     />
     <button
+      disabled={true}
       name="login-button"
       onClick={[Function]}
       type="submit"
