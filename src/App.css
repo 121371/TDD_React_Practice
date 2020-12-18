@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: rgb(82, 78, 78);
+  position: relative;
 }
 
 .App-logo {
@@ -14,14 +21,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 40px;
+  background-color: black;
+  width:100%;
 }
 
 .App-link {
@@ -35,4 +37,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: black;
+  width: calc(100% - 5rem);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

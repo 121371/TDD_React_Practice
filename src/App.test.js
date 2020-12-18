@@ -1,6 +1,7 @@
 import { shallow } from "enzyme";
+import { Route } from 'react-router-dom';
 
-import Login from "./components/Login/Login";
+import Header from "./components/Header/Header";
 import App from "./App";
 
 describe("app component", () => {
@@ -13,11 +14,31 @@ describe("app component", () => {
     expect(wrapper.getElements()).toMatchSnapshot();
   });
 
-  it("child component named Login exists", () => {
-    expect(wrapper.find(Login).exists()).toBeTruthy();
+  it("child component named Header exists", () => {
+    expect(wrapper.find(Header).exists()).toBeTruthy();
   });
 
-  it("element renders with correct header text", () => {
-    expect(wrapper.find("header").text()).toEqual("This is a login page");
+  describe('App routing', () => {
+    let routeWrapper;
+    beforeEach(() => {
+      routeWrapper =  wrapper.find(Route);
+    });
+    it("Two routes should be available", () => {
+      
+      expect(routeWrapper.length).toBe(2);
+     });
+
+     it("route for login component", () => {
+      expect(routeWrapper.first().props().path).toBe('/login');
+     });
+
+     it("route for register component", () => {
+      expect(routeWrapper.last().props().path).toBe('/register');
+     });
+  });
+
+  it('Footer should be present with same text', () => {
+    expect(wrapper.find('footer')).toBeTruthy();
+    expect(wrapper.find('footer').text()).toBe('This is Footer');
   });
 });

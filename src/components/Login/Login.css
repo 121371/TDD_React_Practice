@@ -1,0 +1,17 @@
+.login {
+    border: 2px solid black;
+    padding-bottom: 12px;
+}
+
+input {
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+button {
+    padding: 4px;
+    border-radius: 4px;
+    padding-right: 12px;
+}
