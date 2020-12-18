@@ -5,12 +5,24 @@ Array [
   <div
     className="App"
   >
-    <header
-      className="App-header"
-    >
-      This is a login page
+    <header>
+      <Header />
     </header>
-    <Login />
+    <Switch>
+      <Route
+        component={[Function]}
+        path="/login"
+      />
+      <Route
+        component={[Function]}
+        path="/register"
+      />
+    </Switch>
+    <footer
+      className="App-footer"
+    >
+      This is Footer
+    </footer>
   </div>,
 ]
 `;

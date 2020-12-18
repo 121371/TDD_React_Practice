@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.header-text {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links ul {
+  display: flex;
+}
+
+.nav-links ul li {
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+}

@@ -2,19 +2,25 @@
 
 exports[`Form component component renders correctly 1`] = `
 Array [
-  <div>
+  <div
+    className="login"
+  >
     <input
       name="username"
       onChange={[Function]}
+      placeholder="input username"
       type="text"
       value=""
     />
+    <br />
     <input
       name="password"
       onChange={[Function]}
+      placeholder="enter password"
       type="password"
       value=""
     />
+    <br />
     <button
       disabled={true}
       name="login-button"
